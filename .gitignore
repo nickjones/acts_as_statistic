@@ -1,0 +1,5 @@
+*.log
+*.sqlite3
+.bundle
+.rvmrc
+Gemfile.lock
