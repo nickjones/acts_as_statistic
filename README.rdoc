@@ -1,0 +1,51 @@
+= ActsAsStatistic
+
+This plugin was designed based on a specific need to measure the performance of
+an application at key entry points.  The goal is to provide a fully integrated
+solution to capturing measured results (counts, time, rates, etc.) in a
+normalized pattern for easier statistics generation.  Feel free to fork and
+send pull requests.
+
+This library is still under heavy initial development and is not currently in
+use in any production worthy environment (afaik).
+
+== Installation
+
+TODO
+
+=== Rails 2.3.x
+
+Acts As Statistic will be released as a gem.  To install the gem with a typical
+Rails 2.3.x environment, add this to your config/environment.rb:
+
+   config.gem "acts_as_statistic", :source => "http://gemcutter.org"
+
+==== Post Installation
+
+1. script/generate acts_as_statistic_migration
+2. rake db:migrate
+
+=== Rails 3.x (Not initially supported)
+
+Add the gem to your Gemfile:
+
+   gem 'acts_as_statistic'
+
+==== Post Installation
+
+1. rails generate acts_as_statistic:migration
+2. rake db:migrate
+
+== Testing
+
+Acts As Statistic will utilize RSpec.
+
+   rake spec
+
+== Contributors
+
+* Nick Jones (nickjones) - Maintainer
+
+== Patch Contributors
+
+Copyright (c) 2011 Nick Jones <darellik@gmail.com>, released under the MIT license
