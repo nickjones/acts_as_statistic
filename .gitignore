@@ -1,5 +1,10 @@
+*.gem
 *.log
 *.sqlite3
 .bundle
 .rvmrc
 Gemfile.lock
+*.swp
+coverage
+rdoc
+pkg
